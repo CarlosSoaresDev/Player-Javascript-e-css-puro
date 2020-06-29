@@ -23,11 +23,9 @@ var playList = [
     { file: './src/music/Timecop1983 - On the Run.mp3', title: 'On the Run', artist: 'Timecop1983' },
     { file: './src/music/Volt Age - Dawn Hunter (feat. Jakob Betke).mp3', title: 'Dawn Hunter (feat. Jakob Betke)', artist: 'Volt Age' },
     { file: './src/music/A.L.I.S.O.N - Space Echo.mp3', title: 'Space Echo', artist: 'Alison' }
-
 ];
 
 const load = () => {
-
     audio.src = playList[index].file;
     audio.load()
     title.innerHTML = playList[index].title;
@@ -35,32 +33,27 @@ const load = () => {
 }
 
 const play = () => {
-
     audio.play();
     document.getElementById('_play').setAttribute('hidden', 'true')
     document.getElementById('_pause').removeAttribute('hidden')
 }
 
 const onChangeTimeUpdate = (value) => {
-
     audio.currentTime = value;
     play();
 }
 
 const onChangeVolume = (value) => {
-
     audio.volume = (value / 100);
 }
 
 const pause = () => {
-
     audio.pause();
     document.getElementById('_pause').setAttribute('hidden', 'true')
     document.getElementById('_play').removeAttribute('hidden')
 }
 
 const previous = () => {
-
     index--;
     if (index < 0) { index = playList.length - 1 }
 
@@ -72,9 +65,9 @@ const previous = () => {
 }
 
 const next = () => {
-
     index++;
     if (index >= playList.length) { index = 0 }
+
     audio.src = playList[index].file;
     audio.load();
     audio.play();
