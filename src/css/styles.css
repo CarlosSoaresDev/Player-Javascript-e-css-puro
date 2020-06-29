@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin-right: 450px;
+    margin-left: 450px;
+}
+
+.d-flex-jsb {
+    display: flex;
+    justify-content: space-between
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.fixed-b {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+
+.center {
+    text-align: center
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button.btn span {
+    font-size: 30px;
+}
+
+.btn:hover {
+    color: rebeccapurple;
+}
+
+input.progress {
+    width: 100%;
+}
